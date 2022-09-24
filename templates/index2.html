@@ -1,0 +1,66 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Yixiang Liao</title>
+<link href="{{ url_for('static',filename='css/style.css') }}" rel="stylesheet" type="text/css">
+<link href="../static/css/style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+	<header>
+		<div class="nav">
+			<img src="../static/img/logo.png" width="51" height="51" alt=""/>
+			<p class="T1">Yixiang Liao<br>學習成果</p>
+			<div class="nav_A nav_B">Hello,</div>
+			<div class="nav_B">{{name}}</div>
+			<div class="nav_B">歡迎回來～</div>
+			<div class="nav_B" id="current_date"></div>
+		</div>
+	</header>
+	<div class="st_t">股價資訊</div>
+	<script>
+		date = new Date();
+		year = date.getFullYear();
+		month = date.getMonth() + 1;
+		day = date.getDate();
+		document.getElementById("current_date").innerHTML = year + "/" + month + "/" + day;
+	</script>
+	<div class="ST">
+		<div class="C">
+			<div class="C_T">道瓊指數(DJI)</div>
+			<div>今日收盤價：{{DJI_close}}</div>
+			<div>上一筆收盤價：{{DJI_close_2}}</div>
+			<div>價差：{{DJI_Spread}}</div>
+		</div>
+		<div class="C">
+			<div class="C_T">那斯達克(IXIC)</div>
+			<div>今日收盤價：{{IXIC_close}}</div>
+			<div>上一筆收盤價：{{IXIC_close_2}}</div>
+			<div>價差：{{IXIC_Spread}}</div>
+		</div>
+		<div class="C">
+			<div class="C_T">美元匯率(USDTWD=X)</div>
+			<div>今日收盤價：{{usd_close}}</div>
+			<div>上一筆收盤價：{{usd_close_2}}</div>
+			<div>價差：{{usd_Spread}}</div>
+		</div>
+		<div class="C">
+			<div class="C_T">美國公債10年期(TNX)</div>
+			<div>今日收盤價：{{TNX_close}}</div>
+			<div>上一筆收盤價：{{TNX_close_2}}</div>
+			<div>價差：{{TNX_Spread}}</div>
+		</div>
+		<div class="C">
+			<div class="C_T">加權股價指數(TWII)</div>
+			<div>今日收盤價：{{TWII_close}}</div>
+			<div>上一筆收盤價：{{TWII_close_2}}</div>
+			<div>價差：{{TWII_Spread}}</div>
+		</div>
+		<div class="C">
+			<div class="C_T">西德州原油(WTI)</div>
+			<div>今日收盤價：{{WTI_close}}</div>
+		</div>
+	</div>
+</body>
+</html>

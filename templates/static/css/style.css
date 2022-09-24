@@ -1,0 +1,129 @@
+@charset "utf-8";
+html{
+	height: 100%;
+}
+body {
+	background-color: rgba(0, 0, 0, .6);
+  	background-blend-mode: multiply;
+    background-image: url("../static/img/BG.jpg");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center;
+	background-size: cover;
+	height: 100%;
+}
+header{
+	background: #FFFFFF;
+	padding: 20px;
+	-webkit-box-shadow: 0.1px 0.1px 8px 4px #3F3C3C;
+	box-shadow: 0.1px 0.1px 8px 4px #3F3C3C;
+	margin: 50px 200px 50px 200px;
+}
+.nav{
+	display: flex;
+	align-items: center;
+}
+.T1{
+	font-family: 微軟正黑體;
+	font-weight: bold;
+	margin-left: 10px;
+	font-size: 20px;
+}
+.form{
+	margin-left: 30%;
+}
+.form_input{
+	font-family: 微軟正黑體;
+	margin: 15px;
+	border-radius: 20px;
+	line-height: 30px;
+	padding-left: 10px;
+	font-size: 16px;
+}
+.form_but{
+	font-family: 微軟正黑體;
+	margin: 15px;
+	border-radius: 20px;
+	line-height: 30px;
+	font-size: 16px;
+	font-weight: bold;
+	width: 60px;
+	border: none;
+	-webkit-box-shadow: 0.1px 0.1px 2px 0;
+	box-shadow: 0.1px 0.1px 2px 0;
+}
+.A{
+	background-color: rgba(0, 0, 0, .6);
+  	background-blend-mode: multiply;
+    background-image: url("../static/img/I70A7655.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	width: 10%;
+	height: 100px;
+	text-align: center;
+	padding: 80px;
+	margin-lift: 20px;
+	margin-right: 20px;
+	margin-top: 10%;
+	animation: leftIn 2s linear 0s infinite;
+}
+@keyframes leftIn {
+    from {
+        transform: translate3d(-20%, 0, 0);
+    }
+
+    to {
+        transform: none;
+    }
+}
+.B{
+	background-color: rgba(0, 0, 0, .6);
+  	background-blend-mode: multiply;
+    background-image: url("../static/img/D.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	width: 10%;
+	height: 100px;
+	text-align: center;
+	padding: 80px;
+	margin-left: 20px;
+	margin-right: 20px;
+	margin-top: 10%;
+	animation: rightIn 2s linear 0s infinite;
+}
+@keyframes rightIn {
+    from {
+        transform: translate3d(20%, 0, 0);
+    }
+
+    to {
+        transform: none;
+    }
+}
+span{
+	padding: 10px;
+	margin-top: 0px;
+	line-height: 50px;
+	color: white;
+	font-family: 微軟正黑體;
+	font-size: 20px;
+	font-weight: bold;
+}
+.count{
+	font-size: 50px;
+	font-weight: bold;
+}
+.T2{
+	font-family: 微軟正黑體;
+	font-weight: bold;
+	font-size: 30px;
+	line-height: 50px;
+	color: white;
+	margin-top: -10px;
+}
+.A2{
+	display: flex;
+	justify-content: center;
+}

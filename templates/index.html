@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Yixiang Liao</title>
+<link href="{{ url_for('static',filename='css/style.css') }}" rel="stylesheet" type="text/css">
+<link href="../static/css/style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+	<header>
+		<div class="nav">
+			<img src="../static/img/logo.png" width="51" height="51" alt=""/>
+			<p class="T1">Yixiang Liao<br>學習成果</p>
+			<form class="form" method="post" action="{{url_for('submit')}}">
+				<input class="form_input" name="name" type="text" placeholder="姓名"/>
+				<input class="form_input" name="myID" type="text" placeholder="學號全碼"/>
+				<input class="form_but" type="submit">
+				<input class="form_but" type="reset">
+	  		</form>
+		</div>
+	</header>
+	<div class="A2">
+		<div class="A">
+			<span class="T2">榮獲獎項</span>
+			<span id="days" class="count">18</span><span>項</span>
+		</div>
+		<script src='../static/js/A_1.js'></script>
+		<div class="B">
+			<span class="T2">取得證照</span>
+			<span id="days" class="count">11</span><span>張</span>
+		</div>
+	</div>
+</body>
+</html>
